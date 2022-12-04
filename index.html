@@ -6,80 +6,22 @@
   <meta name="viewport" content="width=device-width">
   <title>replit</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
-
-  <style>
-    .nav {
-      height: 70px;
-      border-bottom: 1px solid black;
-      display: flex;
-      align-items: center;
-    }
-
-    .nav-right-items {
-      display: flex;
-      margin-left: auto;
-    }
-
-    .nav-item {
-      margin-left: 10px;
-    }
-
-    .title {
-      text-align: center;
-      font-size: 60px;
-      font-weight: bold;
-    }
-
-    .subtitle {
-      text-align: center;
-      font-size: 35px;
-      font-weight: 300;
-      margin-top: 30px;
-    }
-
-    .main {
-      width: 800px;
-      margin: 0 auto;
-      margin-top: 60px;
-    }
-
-
-  </style>
 </head>
 
 <body>
-  <div class="nav">
-    <div class="userName">
-      Ants 팀 - 설민우 개인 프로젝트
-    </div>
-    <div class="nav-right-items">
-      <div class="nav-item">윈터데브캠프 2기</div>
+  <main>
+    <section>
+      <section class="link-input">
+        <form class="input-container">
+          <input type="text" placeholder="단축할 링크를 입력하세요" required />
+          <button type="submit" class="input-btn">단 축!</button>
+        </form>
+      </section>
+      <div class="result">
 
-    </div>
-
-  </div>
-
-  <div class="main">
-    <div class="title">
-      URL 단축기
-    </div>
-
-    <div class="subtitle">
-      입력한 URL을 단축합니다.<br>
-      단축하고 싶은 주소를 아래의 창에 입력하세요<br>
-      예시 : https://www.youtube.com/
-    </div>
-  </div>
-
-
-  <script src="script.js"></script>
-
-  <!--
-  This script places a badge on your repl's full-browser view back to your repl's cover
-  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
-  teal, blue, blurple, magenta, pink!
-  -->
-  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
+      </div>
+  </main>
+  <script src="app.js"></script>
 </body>
 
 </html>
